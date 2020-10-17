@@ -1,17 +1,16 @@
-/* 
-// 加载mongoose模块，用于在node中操作数据库
 const mongoose = require('mongoose')
 
-// 连接数据库
-mongoose.connect('mongodb://localhost/2005',{ useNewUrlParser: true, useUnifiedTopology: true })
+// 创建一个与数据集合(表)相关的schema对象
+let userSchema = new mongoose.Schema({
+  user: {type:String,required:true},
+  pass: {type:String,required:true},
+  email: {type:String,required:true}
+})
 
-// 保存连接数据库对象
-let db = mongoose.connection
+// 把schema对象转换成与数据集合相关的数据模型
+// mongoose.model('集合名/表名',schema对象)
+let User = mongoose.model('users',userSchema)
+// 使用 User 数据模型来进行增删改查
 
-// 监听连接对象的error事件，连接数据库失败时触发
-db.on('error', console.error.bind(console, 'connection error:'))
+module.exports = User
 
-// 监听连接对象的连接成功事件，连接数据库成功时触发
-db.once('open', function() {
-  console.log('----------db connect ok------------')
-}) */
