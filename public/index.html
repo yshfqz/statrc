@@ -6,10 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <script src="./js/index.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
 </head>
-<body>
+<body> 
         <div id="n_nav"> 
             <ul id="n_hd">
                 <li class="n_jj"><a href="#"><span class="iconfont" class="n_c">&#xe662;</span></a></li>
@@ -17,10 +18,10 @@
             </ul>
 
             <div class="n_l"><img src="../imges/indeximg/logo1.png" alt=""></div>
-
+ 
             <div id="n_t1">
 
-                <div id="n_text">
+                <div id="n_text" class="animated fadeInUp">
                     <h1>新红旗 H9</h1>
                     <p>新时代C+级豪华旗舰轿车</p>
                 </div>
@@ -39,16 +40,16 @@
      <div id="n_d2">
 
         <ul class="n_carname">
-            <li><a href="#" class="active">H5</a></li>
+            <li><a href="#" >H5</a></li>
             <li><a href="#">H7</a></li>
-            <li><a href="#">H9</a></li>
+            <li><a class="active" href="#">H9</a></li>
             <li><a href="#">E-HS3</a></li>
             <li><a href="#">HS5</a></li>
             <li><a href="#">HS7</a></li>
         </ul>
 
         <div class="n_carp">
-            <div  class="n_h5" class="n_mg" >
+            <div  class="n_h5 n_mg">
                 <ul class="n_d2imgp">
                     <span>H9</span>
                     <img src="../imges/indeximg/h9.png" alt="">
@@ -57,19 +58,22 @@
                 <ul class="n_deploy">
                     <li>
                         <span class="spanL">最大功率</span>
-                        <span class="spanR">145&nbsp;kW</span>
+                        <span class="spanR">208&nbsp;Kw</span>
                         
                     </li>
                     <li>
                         <span class="spanL">最大扭矩</span>
-                        <span class="spanR">320&nbsp;N·m</span>
+                        <span class="spanR">400&nbsp;N·m</span>
                     </li>
                     <li>
                         <span class="spanL">百公里加速</span>
-                        <span class="spanR">8&nbsp;s</span>
+                        <span class="spanR">7&nbsp;s</span>
                     </li>
-                    <div>
-                        <span class="spanmare">了解更多</span><span>→</span>
+                    <div class="now">
+                        <a href="#" style="display: block;">
+                              <span class="spanmare">了解更多</span><span>→</span>
+                        </a>
+                          
                     </div>
                 </ul>
             </div>
@@ -180,5 +184,23 @@
            </ul>
        </div>
    </div>  -->
+
+   <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+   <script type="text/javascript">
+   $(".main-page .nav div").mouseenter(function () {
+       var $this = $(this);
+       var index = $this.index();
+   }).mouseleave(function () {
+       var $this = $(this);
+       var index = $this.index();
+   }).click(function () {
+       var $this = $(this);
+       var index = $this.index();
+       var l = -(index * 290);
+       $(".main-page .nav div").removeClass("on");
+       $(".main-page .nav div").eq(index).addClass("on");
+       $(".main-page .content div:eq(0)").stop().animate({ "margin-top": l }, 500);
+   });
+   </script>
 </body> 
 </html> 
