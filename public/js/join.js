@@ -39,4 +39,44 @@ $('.nav ul li a').mouseover(function () {
 $('.nav ul li a').mouseout(function () {
     $(this).removeClass('one')
 })
+$('.button-base').click(()=>{
+    //console.log(123)
+    $('#login-in').hide()
+    $('#login-in1').show()
+})
+
+//注册验证
+$('.button-primary').click(function (){
+    let url = 'http://localhost:3000/user/register'
+    let data = {
+      user: $('.user').val(),
+      pass: $('.pass').val(),
+      code:$('.code').val()
+    }
+    $.post(url,data,function (data){
+      if (data.err == 0) {
+        alert(data.msg)
+        localStorage.setItem('login','loginSuccess')
+        localStorage.setItem('user',$('#user').val())
+        //location.href = './index.html'
+      } else {
+        alert(data.msg)
+      }
+    })
+  })
+  $('.email').click(function (){
+      $(this).text("已发送")
+    let url = 'http://localhost:3000/user/send'
+    let data = {
+      user: $('.user').val()
+    }
+    $.post(url,data,function (data){
+      if (data.err == 0) {
+        alert(data.msg)
+        //location.href = './index.html'
+      } else {
+        alert(data.msg)
+      }
+    })
+  })
 

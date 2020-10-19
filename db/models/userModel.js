@@ -4,7 +4,6 @@ const mongoose = require('mongoose')
 let userSchema = new mongoose.Schema({
   user: {type:String,required:true},
   pass: {type:String,required:true},
-  email: {type:String,required:true}
 })
 
 // 把schema对象转换成与数据集合相关的数据模型

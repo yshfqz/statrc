@@ -7,15 +7,15 @@ let transporter = nodemailer.createTransport({
   port: 465,// 端口号
   secure: true, // 端口号为465是为true,其他端口为fales
   auth: {
-    user: '99835885@qq.com', // 邮件发送者的邮箱地址，如:99835885@qq.com
-    pass: 'xwgkatgigvvubjcb', // 邮件发送者的邮箱smtp授权码(见下方设置)
+    user: 'namedebeishang@qq.com', // 邮件发送者的邮箱地址，如:99835885@qq.com
+    pass: 'xedcyrutlomgbdda', // 邮件发送者的邮箱smtp授权码(见下方设置)xedcyrutlomgbdda
   },
 })
 
 function send(email,title,message){
   // 发送邮件的配置信息
   let info = {
-    from: '"xx站管理员" <99835885@qq.com>', // 发送者的邮箱地址
+    from: '"xx站管理员" <namedebeishang@qq.com>', // 发送者的邮箱地址
     to: email, // 接收邮件者列表
     subject: title, // 邮件主题
     text: message, // 纯文本邮件内容(二选一)

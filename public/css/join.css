@@ -215,6 +215,37 @@ height: 100px;
     cursor: pointer;
     border: none;
 }
+#login-in1{
+    width: 400px;
+    height: 400px;
+    padding: 30px 42px;
+    background-color: #fff;
+    position: absolute;
+    left: 30px;
+    top: 2px;
+    bottom: 2px;
+    margin: auto;
+    display: none;
+}
+.yinsi{
+    height: 43px;
+    padding: 11px 0;
+    font-size: 13px;
+    color: #999;
+    line-height: 43px;
+    text-align: center;
+}
+.yinsi a{
+    color: red;
+}
+.xieyi{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid #C9C9C9;
+    vertical-align: middle;
+    margin: -2px 6px 0 0;
 }
 #foot{
     width: 100%;
