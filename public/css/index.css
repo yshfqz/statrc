@@ -1,0 +1,51 @@
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0;  padding: 0;box-sizing: border-box;font-family: "jianytibold";}
+ul{list-style: none;}
+html{width: 100%;height: 100%;}
+a{text-decoration: none;}
+body{position: relative;width: 100%; height: 100%;}
+nav{position: fixed;top: 0;left: 0;}
+video{width: 100%; height: 100%;}
+
+
+#n_hd{display: flex; justify-content: space-between;  position: fixed; z-index: 20;}
+
+#n_hd .n_jj{position: absolute; top: 20px; left: 20px; font-size: 20px;}
+#n_nav{position: relative;}
+#n_nav .n_l{position: absolute; top: 20px; left: 725px;z-index: 2;}
+#n_hd .n_login{position: absolute;top: 20px; left: 1400px; width: 100px;font-size: 28px; padding-right: 20px;}
+#n_hd a span{font-size: 30px;}
+#n_t1{width: 100%;height: 750px;background: url('../红旗/imgs/background.jpg') no-repeat center;}
+
+#n_shade{width: 100%;height: 750px;position: absolute;top: 0;left: 0; background-color: #000; opacity: 0.6; z-index: 5;}
+
+
+
+
+#n_t1{position: relative;}
+#n_text{ position: absolute; top: 143px; left: 645px;}
+#n_text h1{font-size: 50px;}
+#n_text p{font-size: 20px; color: #888;}
+#n_in1{position: relative;}
+.n_index1{display: block; width: 900px;height: 750px; position: absolute;top: 22px; left: 315px;}
+
+
+#n_in2 img{display: block; width: 534px;height: 217px;}
+
+#n_d2{width: 100%;height: 750px; position: relative; background: #f8f8f8;}
+#n_d2 .n_all2{width: 100%;height: 750px;}
+.n_carname{position: absolute; top: 149px;left: 100px; font-size: 23px;width: 20%;}
+.n_carname li{padding-bottom: 30px;}
+.n_carp{position: absolute;width: 80%;top: 149px; right: 100px;}
+
+#n_d2 .n_mg{position: relative;}
+.n_carp .n_d2imgp span  {font-size: 300px; text-align: center; color: #fff; position: absolute; top:    -186px; left: 300px; overflow: hidden;}
+#n_d2 .n_d2imgp img{display: block; width:1096px;height: 440px; z-index: 100;position: absolute;top: 50px;}  
+
+.n_carp .n_deploy{position: absolute; top: 0;right: 50px; width: 240px;height: 200px;}
+.n_deploy li{padding-bottom: 20px;}
+.n_deploy  .spanL{font-size: 12px; color: #777;}
+.n_deploy  .spanR{float: right;}
+.n_deploy div{margin: 0 auto; border: solid 1px #000;width: 100%;height: 50px;line-height: 50px; text-align: center; font-weight: bold;}
+.n_deploy div .spanmare{padding-right: 20px;}
+
