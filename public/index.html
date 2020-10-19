@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/animate.min.css">
     <script src="./js/index.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body> 
         <div id="n_nav"> 
@@ -70,8 +71,8 @@
                         <span class="spanR">7&nbsp;s</span>
                     </li>
                     <div class="now">
-                        <a href="#" style="display: block;">
-                              <span class="spanmare">了解更多</span><span>→</span>
+                        <a href="#">
+                              <span class="spanmare">了解更多</span><span class="sp2">→</span>
                         </a>
                           
                     </div>
@@ -83,67 +84,63 @@
     </div>   
 
      
-<!--     <div>
-    <video preload autoplay loop muted src="../红旗/imgs/首页视频.mp4"  type="video/mp4"></video>>
+     <div>
+        <video preload autoplay loop muted src="../imges/indeximg/首页视频.mp4"  type="video/mp4"></video>
     </div>
-        
-    </video>   
-    
-   <div>
-       <div>
-           <h1>品牌资讯</h1>
-           <p>换新启程 创享未来</p>
-           <div>
-               <p>了解更多</p>
-               <p>→</p>
-           </div>
-       </div>
-        <video width="100%" height="750px" autoplay="autoplay" loop muted  src="../红旗/imgs/首页视频2.mp4">
+
+   <div class="n_d3"> 
+       <div class="n33">
+            <h1>品牌资讯</h1>
+            <p>换新启程 创享未来</p>
+            <div>
+                <a href="#">
+                    <span class="spanmare">了解更多</span><span>→</span>
+                 </a>
+            </div>
+        </div>
+
+        <video width="100%" height="750px" autoplay="autoplay" loop muted  src="../imges/indeximg/首页视频2.mp4">
         </video>
    </div>
 
-   <div>
+<!--    <div>
 
-    <section>
-        <img src="../红旗/imgs/经销商.jpg" alt="">
-        <div>
-            <h2>经销商</h2>
-            <p>查找所在地区红旗经销商与红旗服务网点，并提供导航、电话和地址查询服务，恭候莅临品鉴。</p>   
+        <section>
+            <img src="../imges/indeximg/经销商.jpg" alt="">
+            <div>
+                <h2>经销商</h2>
+                <p>查找所在地区红旗经销商与红旗服务网点，并提供导航、电话和地址查询服务，恭候莅临品鉴。</p>   
+                <div>
+                    <p>了解详情</p><span>→</span>
+                </div>        
+            </div>
+        </section>
+        <section>
+            <img src="../imges/indeximg/服务理念.jpg" alt="">
+            <h2>服务与理念</h2>
+            <p>以“行理想,心服务”为口号，以“专业,安心,尊享”为理念，立志为用户创造全方位的优质汽车生活。</p>   
             <div>
                 <p>了解详情</p><span>→</span>
             </div>        
-        </div>
-    </section>
-    <section>
-        <img src="../红旗/imgs/服务理念.jpg" alt="">
-        <h2>服务与理念</h2>
-        <p>以“行理想,心服务”为口号，以“专业,安心,尊享”为理念，立志为用户创造全方位的优质汽车生活。</p>   
-        <div>
-            <p>了解详情</p><span>→</span>
-        </div>        
-    </section>
-    <section>
-        <img src="../红旗/imgs/维修鱼保养.jpg" alt="">
-        <h2>维修与保养</h2>
-        <p>所有红旗品牌车型，都享受终身免费保修政策。</p>   
-        <div>
-            <p>了解详情</p><span>→</span>
-        </div>        
-    </section>
-
-
-
-
+        </section>
+        <section>
+            <img src="../imges/indeximg/维修鱼保养.jpg" alt="">
+            <h2>维修与保养</h2>
+            <p>所有红旗品牌车型，都享受终身免费保修政策。</p>   
+            <div>
+                <p>了解详情</p><span>→</span>
+            </div>        
+        </section>
    </div>
-
-   <div>
+ -->
+<!--    <div>
        <p>红旗官方账号</p>
-       <div><img src="../红旗/imgs/红旗APP.jpg" alt=""></div>
-       <div><img src="../红旗/imgs/红旗微信.jpg" alt=""></div>
-       <div><img src="../红旗/imgs/红旗微博.jpg" alt=""></div>
-       <div><img src="../红旗/imgs/红旗抖音.jpg" alt=""></div>
-       <div><img src="../红旗/imgs/红旗小程序.jpg" alt=""></div>
-       <div><img src="../红旗/imgs/团微信.jpg" alt=""></div>
+       <div><img src="./红旗APP.jpg" alt=""></div>
+       <div><img src="./红旗微信.jpg" alt=""></div>
+       <div><img src="./红旗微博.jpg" alt=""></div>
+       <div><img src="./红旗抖音.jpg" alt=""></div>
+       <div><img src="./红旗小程序.jpg" alt=""></div>
+       <div><img src="./团微信.jpg" alt=""></div>
    </div>
    <div>
        <ul>
@@ -183,24 +180,6 @@
                <p>吉ICP备17008829号-1</p>
            </ul>
        </div>
-   </div>  -->
-
-   <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
-   <script type="text/javascript">
-   $(".main-page .nav div").mouseenter(function () {
-       var $this = $(this);
-       var index = $this.index();
-   }).mouseleave(function () {
-       var $this = $(this);
-       var index = $this.index();
-   }).click(function () {
-       var $this = $(this);
-       var index = $this.index();
-       var l = -(index * 290);
-       $(".main-page .nav div").removeClass("on");
-       $(".main-page .nav div").eq(index).addClass("on");
-       $(".main-page .content div:eq(0)").stop().animate({ "margin-top": l }, 500);
-   });
-   </script>
+   </div>   -->
 </body> 
 </html> 
