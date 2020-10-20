@@ -40,6 +40,18 @@ $('.nav ul li a').mouseover(function () {
 $('.nav ul li a').mouseout(function () {
     $(this).removeClass('one')
 })
+$(window).scroll(function(){
+  console.log($(window).scrollTop()) 
+  var high = $(window).scrollTop()
+  if(high==0){
+      $('#head').css('background-color','#fff')
+      $('.logo').show()
+  }else{
+      $('#head').css("background-color","")
+      $('.logo').hide()
+  }
+
+})
 //登录界面切换
 $('.button-base').click(()=>{
     //console.log(123)
@@ -103,6 +115,7 @@ $('.button-primary').click(function (){
         $('.join').text("欢迎车主")
         localStorage.setItem('login','loginSuccess')
         localStorage.setItem('user',$('#user1').val())
+        location.href = './index.html'
         //location.href = './index.html'
       } else {
         alert(data.msg)
@@ -141,6 +154,7 @@ $('.button-primary').click(function (){
         $('.join').text("欢迎车主")
         localStorage.setItem('login','loginSuccess')
         localStorage.setItem('user',$('#user2').val())
+        location.href = './index.html'
         //location.href = './index.html'
       } else {
         alert(data.msg)

@@ -19,7 +19,6 @@ a{ color:#909090; text-decoration:none;}
 }
 #head{
     height: 100px;
-    background-color:#fff;
     position:fixed;
     top: 0px;
     z-index: 10000;
