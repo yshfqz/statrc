@@ -145,5 +145,31 @@ router.post('/send',(req,res)=>{
     res.send({err: -1,msg: '验证码发送失败'})
   })
 })
+router.post('/login1',(req,res)=>{
+  // 接收数据，处理数据，返回数据
+  let {user,code} = req.body
+
+  // 空值判断
+  if (!user || !code) {
+    return res.send({err: -1,msg: '参数不能为空'})
+  }
+  if (code != cacheCode[user]) {
+    return res.send({err: -4,msg: '验证码错误'})
+  }
+
+  // 查询数据库
+  User.find({user})
+  .then((data)=>{
+    if (data.length > 0) {
+      res.send({err: 0,msg: '登录成功'})
+    } else {
+      // 数据库没有此账号
+      res.send({err: -1,msg: '账号不存在'})
+    }
+  })
+  .catch((err)=>{
+    console.log(err)
+  })
+})
 
   module.exports = router
