@@ -1,0 +1,241 @@
+/*==============清间距====================*/
+body,h1,h2,h3,h4,h5,h6,a,img,input,ul,li,ol,dl,dt,dd{ padding:0; margin:0;}
+ul,ol{ list-style:none;}
+input{ outline:none}
+/*==============全局样式====================*/
+body{ font-size:12px; color:#3e3e3e; font-family:"微软雅黑"; background:#f7f7f7;width: 100%;}
+/*==============超链接样式====================*/
+a{ color:#909090; text-decoration:none;}
+/* a:hover{ text-decoration: none; color:#f60;font-weight: none;} */
+/*==============公共样式====================*/
+.w{ width:100%; margin:0 auto;}
+.l{ float:left;}
+.r{ float:right}
+/**************head***************/
+#app{
+
+    width: 100%;
+    background-color:#fff;
+}
+#head{
+    height: 100px;
+    position:fixed;
+    top: 0px;
+    z-index: 10000;
+}
+#head .head-line{
+    height: 100px;
+}
+#head .zhegai{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 0px;
+    background:#f8f8f8;
+    transition: opacity 1s linear
+}
+#head .next{
+    font-size: 14px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: black;
+    padding: 0 42px;
+
+}
+#head .join{
+    font-size: 14px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: black;
+}
+#head .logo{
+    background:url(http://hongqi.faw.cn/image/logo.png) no-repeat ;
+    background-size: 100%;
+    position: absolute;
+    width: 93px;
+    height: 75px;
+    top:13px;
+    left: 50%;
+    margin-left: -46px;
+}
+#head .nav .next1{
+    font-size: 16px;
+    text-align: center;
+    height: 100%;
+    color: #000;
+    height: 16px;
+    padding: 0 42px;
+    line-height: 100px;
+}
+#head .nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+}
+#head .nav ul{
+height: 100px;
+
+    margin-left: 20px;
+}
+
+#head .nav li{
+    float: left;
+    position: relative;
+    padding: 40px 0;
+    height: 20px;
+}
+#head .nav li a{
+    display: block;
+    color: #666;
+    font-size: 14px;
+    padding: 0 30px;
+    height: 20px;
+    position: relative;
+}
+#head .more,#head .more1{
+    background-color: #fff;
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    display: none;
+}
+#head .more .aaa,#head .more1 .aaa{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    border-bottom: 1px solid #E7E7E7;
+    transition: .2s ease;
+}
+.one{
+    font-weight: 800;
+}
+/***********body*******/
+#driver-body{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    background-color: #f6f6f6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url(http://hongqi.faw.cn/image/reserve_drive_bg.jpg);
+}
+.contonts{
+    position: relative;
+    height: 100%;
+}
+.driver-imgs{
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+}
+.driver-imgs img{
+    height: 280px;
+    display: none;
+}
+.driver-text{
+    position: absolute;
+    left: 30px;
+    top: 35px;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+    width: 420px;
+    height: 510px;
+   
+}
+.label{
+    padding: 24px 0 0 0;
+    font-size: 10px;
+    color: #999;
+    position: relative;
+}
+.label span{
+    position: absolute;
+    left: -9px;
+    top: 0;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+    font-size: 14px;
+    color: #E60012;
+}
+.driver-text h2{
+    font-size: 28px;
+}
+.driver-text1{
+    background: #fff;
+    padding: 40px 64px;
+}
+select{
+    width: 100%;
+    height: 42px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    background: url(http://hongqi.faw.cn/image/icon_input_down.png) no-repeat;
+    background-position: right;
+    background-size: 15px;
+    outline:none;
+    border: 0;
+}
+input{
+    width: 100%;
+    height: 42px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.input1{
+    width: 40%;
+    font-weight: 800;
+    height: 42px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.button-primary{
+    width: 100%;
+    height: 60px;
+    background: #E60012;
+    border-radius: 2px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #FEFEFF;
+    cursor: pointer;
+}
+option{
+    outline:none;
+    border: 0;
+}
+.driver-some{
+    border-bottom: 1px solid #ddd;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    
+}
