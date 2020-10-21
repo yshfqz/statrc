@@ -94,13 +94,15 @@ video{width: 100%; height: 100%;}
  #n_ac .ncimg .acz div{width: 100%; height: 100%; background-color: #000;opacity: 0.5;}
  #n_ac .ncimg .acz img{ display: block; width: 155px;height: 150px;position: absolute; top: 55px; left: 135px; }
  #ncimgk_1{width: 425px;height: 260px;margin-right: 50px;overflow: hidden;}
- #ncimgk_1 img{
+ #n_ac .ncimg .acz{display: none;}
+ #ncimgk_1 .imz{
      width:100px;
      height:100px;
      transition:all 1s ease-out;}
-#ncimgk_1 img:hover {transform:scale(1.2);}
+#ncimgk_1:hover .imz{transform:scale(1.2);}
+#ncimgk_1:hover .ppp{width: 0;}
 
- #n_ac div p{width: 425px; height: 60px; line-height: 60px; background-color: #000; opacity: 0.5; z-index: 10;font-size: 20px; font-weight: bold; color: #fff; margin-top: -110px;  margin-bottom: 20px; position: absolute; top: 310px;}
+ #n_ac div p{width: 425px; height: 60px; line-height: 60px; background-color: #000; opacity: 0.5; z-index: 10;font-size: 20px; font-weight: bold; color: #fff; margin-top: -110px;  margin-bottom: 20px; position: absolute; top: 310px;overflow: hidden;transition: 1s;}
  #n_ac .l{display: block; float: left; padding-left: 25px;}
  #n_ac .r{display: block; float: right; padding-right: 25px;}
 
@@ -126,6 +128,7 @@ video{width: 100%; height: 100%;}
  #n_d5 .uz3 .r li{float: left; padding-right: 50px;}
  #n_d5 .uz3 a span{font-size: 50px; color: #ccc;}
  #n_d5 .uz3 .r a{font-size: 16px; color: #ddd;}
+ #n_d5 .uz2  ul li a:hover{color: #f00;}
  #lastdiv{position: relative;}
  #lastdiv .dz{position: relative;}
  #lastdiv .dz img{display: block; width: 116px;height: 116px; margin: 0 auto; }

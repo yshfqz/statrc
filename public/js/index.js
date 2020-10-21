@@ -1,15 +1,31 @@
 
 $('#ncimgk_1').mouseover(function(){
-    $('#ncimgk_1 .acz').css('display','none')
-    $('#ncimgk_1 p').addClass('animated fadeOut')
+    console.log(123)
+    $('#ncimgk_1 .acz').show()
+    $('#ncimgk_1 .p').hide()
+   //addClass('animated fadeOut')
 })
 $('#ncimgk_1').mouseout(function(){
-    $('#ncimgk_1 .acz').css('display','block')
-    $('#ncimgk_1 p').removeClass('animated fadeOut')
-    $('#ncimgk_1 p').fadeIn(500)
+    $('#ncimgk_1 .acz').hide()
+   // $('#ncimgk_1 p').removeClass('animated fadeOut')
+    $('#ncimgk_1 p').show()
 })
 
 
+/*  $('#ncimgk_2').mouseover(function(){
+    $('#ncimgk_2.acz').show()
+   $('#ncimgk_2 p').hide()
+   //addClass('animated fadeOut')
+})
+$('#ncimgk_2').mouseout(function(){
+    $('#ncimgk_2 .acz').hide()
+   // $('#ncimgk_1 p').removeClass('animated fadeOut')
+    $('#ncimgk_2 p').fadeIn(500)
+})
+ */
+
+
+ 
 
 
 

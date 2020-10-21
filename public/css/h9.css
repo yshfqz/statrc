@@ -1,0 +1,37 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jianytibold";
+    
+}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+#n_d1{position: relative;}
+#n_d1 .d11{width: 500px;height: 200px; text-align: center; position: absolute; top: 50%; left: 33.6% ;color: #fff; line-height:50px; font-weight: bold;}
+
+#n_fd{width: 100%;height: 52px;background-color: #fff;}
+#n_t1{width: 1320px; height: 40px; margin: 0 auto; line-height: 40px;}
+#n_t1 .l{float: left; width: 500px;height: 52px;}
+#n_t1 .l span{padding: 0 10px;font-size: 15px; font-weight: bold;}
+#n_t1 .l .p3{font-size: 12px;font-weight:100;}
+#n_t1 .r{float: right; width: 240px;height: 40px;line-height: 40px; text-align: center; }
+#n_t1 .r .rd{width: 70px;height: 28px; line-height: 28px;  cursor: pointer; border: 1px solid #000; float: left; margin-left: 25px; margin-top: 8px;}
+#n_t1 .r .rd:nth-child(2){background-color: #000;}
+#n_t1 .r .rd:nth-child(2) a {color: #fff; font-weight: bold;  }
+
+#slideshow{width: 1320px;height: 100%; background-color: #f8f8f8; margin: 0 auto; }
+#slideshow .u1{width:1000px; height: 750px; margin: 0 auto; }
+#slideshow .u1 li{text-align: center;}
+#slideshow .u2{margin: 0 auto;overflow: hidden;width: 100%;height: 750px;}
+#slideshow .u2 li{width: 333px ;height: 40px; line-height: 40px; float: left;} 
+#slideshow .u2 li p:nth-child(1){font-size: 20px; font-weight: bold; }
+#slideshow .u2 li p:nth-child(2){font-size: 12px; color: #888; }
+#dd{ position: relative;}
+#dian{width: 100px; height: 10px; position: absolute; top: -190px; left: 616px; }
+
+#slideshow ul{float: left;}
+
+#dian li{width: 10px;height: 10px;border-radius: 50%; border: 1px solid #000; float: left; margin-right: 10px;}
+#dian .active{background-color: #f00;}
