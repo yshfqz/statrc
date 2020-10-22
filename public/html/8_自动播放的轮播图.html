@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{margin:0; padding:0;}
+    ul,ol{ list-style: none;}
+    #banner{ width:300px; height:150px; margin:20px auto; position: relative; border:1px black solid; overflow: hidden;}
+    #banner ul{ width:1500px; position: absolute; left:0px; top:0; transition: .5s;}
+    #banner ul li{ width:300px; height:150px; float:left;}
+    #banner ul img{ width:100%; height:100%; display: block;}
+    #banner ol{ position: absolute; right:10px; bottom: 10px;}
+    #banner ol li{ width:20px; height: 20px; float:left; margin:3px; border-radius: 50%; border:1px black solid; background:white;}
+    #banner ol li.active{ background:Red;}
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <ul>
+            <li><a href="#"><img src="./img/32.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/33.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/34.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/35.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/36.jpg" alt=""></a></li>
+        </ul>
+        <ol>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <script>
+
+        var banner = document.querySelector('#banner');
+        var olLis = document.querySelectorAll('ol li');
+        var ul = document.querySelector('ul');
+        var now = 0;
+        var timer;
+        for(var i=0;i<olLis.length;i++){
+            olLis[i].index = i;
+            olLis[i].onclick = function(){
+                for(var i=0;i<olLis.length;i++){
+                    olLis[i].className = '';
+                }
+                this.className = 'active';
+                ul.style.left = - 300 * this.index + 'px';
+                now = this.index;  //把索引值赋值给now，让点击和自动播放关联在一起
+            };
+        }
+
+        banner.onmouseover = function(){
+            clearInterval(timer);
+        };
+        banner.onmouseout = function(){
+            timer = setInterval(run,3000);  //移开banner再次自动播放轮播图
+        };
+
+        timer = setInterval(run,3000);  //初始自动播放轮播图
+
+        function run(){
+            if(now == olLis.length-1){
+                now = 0;
+            }
+            else{
+                now++;
+            }
+            for(var i=0;i<olLis.length;i++){
+                olLis[i].className = '';
+            }
+            olLis[now].className = 'active';
+            ul.style.left = - 300 * now + 'px';
+        }
+    </script>
+</body>
+</html>
